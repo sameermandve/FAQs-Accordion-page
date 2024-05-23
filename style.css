@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(275, 100%, 97%);
+  background-image: url(assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+
+#card {
+  width: 550px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 1.75rem;
+  margin: 50px 0;
+}
+
+#heading {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#heading img {
+  height: 30px;
+  width: 31px;
+  margin-right: 1.25rem;
+}
+
+#heading h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(292, 42%, 14%);
+}
+
+.ques-div {
+  border-bottom: 1px solid hsl(275, 100%, 97%);
+  padding: 1.5rem 0;
+}
+
+.ques-div:last-child {
+  border-bottom: none;
+  padding: 1.5rem 0 1rem 0;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question p {
+  font-size: 16px;
+  font-weight: 600;
+  color: hsl(292, 42%, 14%);
+}
+
+.question p:hover {
+  cursor: pointer;
+  color: #ad28eb;
+}
+
+.signs {
+  padding-right: 10px;
+}
+
+.plus:hover,
+.plus:active {
+  cursor: pointer;
+}
+
+.minus:hover,
+.minus:active {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.ans {
+  color: hsl(292, 16%, 49%);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: start;
+  padding-top: 1.35rem;
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url(assets/images/background-pattern-mobile.svg);
+  }
+
+  #card {
+    width: 335px;
+    padding: 1.75rem;
+    margin: 50px 0;
+  }
+
+  .signs {
+    padding-right: 5px;
+    padding-left: 10px;
+  }
+}
